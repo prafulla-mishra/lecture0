@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hover Example</title>
+	<style>
+		button{
+			width: fit-content;
+			font-size: 24px;
+			color: navy;
+			background-color: green;
+		}
+		button:hover{
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<button id="dhishum" type="button" color="white" background-color="green" >Dhishum Darsh</button>
+	</form>
+<script>
+document.getElementById("dhishum").onclick = function() {myFunction()};
+
+function myFunction()
+{
+	if (document.getElementById("dhishum").innerHTML == "Dhishum Darsh")
+		document.getElementById("dhishum").innerHTML = "Dhishum Dhishum Darsh";
+	else
+		document.getElementById("dhishum").innerHTML = "Dhishum Darsh";
+}
+</script>
+</body>
+</html>
